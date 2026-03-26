@@ -1,5 +1,5 @@
 manifestVersion: 1.1
-id: argus
+id: argus-store-bot
 category: finance
 name: Argus Trading Bot
 version: "1.0.0"
