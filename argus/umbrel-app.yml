@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: argus
+name: Argus Trading Bot
+tagline: Automated crypto trading bot with dashboard
+icon: https://raw.githubusercontent.com/hansjones73-bit/argus-umbrel/main/argus/icon.svg
+category: Finance
+version: "1.0.0"
+port: 8888
+description: >-
+  Argus V8 - Automated cryptocurrency trading bot for Coinbase Advanced Trade.
+  Includes live dashboard with position tracking, strategy management,
+  walk-forward optimizer, and real-time P&L monitoring.
+developer: Private
+website: http://localhost
+submitter: Private
+submission: http://localhost
+repo: http://localhost
+support: http://localhost
+gallery: []
+releaseNotes: Initial release
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
