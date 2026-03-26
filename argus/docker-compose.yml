@@ -5,12 +5,10 @@ services:
     image: node:22-alpine
     working_dir: /app
     restart: unless-stopped
-    stop_grace_period: 1m
     volumes:
       - ${APP_DATA_DIR}/data:/app
     ports:
       - "${APP_PORT}:8888"
     environment:
       - NODE_ENV=production
-    command: >
-      sh -c "npm install --prefer-offline 2>/dev/null; node dashboard-server-v3.js & node bot-v8.js"
+    command: sh -c "npm install --prefer-offline 2>/dev/null; node dashboard-server-v3.js & node bot-v8.js"
