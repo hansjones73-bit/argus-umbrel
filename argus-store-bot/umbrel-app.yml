@@ -10,7 +10,7 @@ website: https://github.com/hansjones73-bit/argus-umbrel
 dependencies: []
 repo: https://github.com/hansjones73-bit/argus-umbrel
 support: https://github.com/hansjones73-bit/argus-umbrel
-port: 8888
+port: 8889
 gallery: []
 path: ""
 defaultPassword: ""
