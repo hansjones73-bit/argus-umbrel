@@ -4,12 +4,14 @@ services:
     working_dir: /app
     restart: unless-stopped
     volumes:
-      - ${APP_DATA_DIR}/data:/app
+      - ${APP_DATA_DIR:-/home/umbrel/umbrel/app-data/argus-store-bot/data}:/app
     ports:
-      - "${APP_PORT}:8888"
+      - "${APP_PORT:-8889}:8888"
     environment:
       - NODE_ENV=production
       - WORKSPACE_DIR=/app
+      - STARTING_CAPITAL=302
+      - BOT_TIMEZONE=America/New_York
     command: >
       sh -c "
         apk add --no-cache python3 py3-pip sqlite 2>/dev/null &&
