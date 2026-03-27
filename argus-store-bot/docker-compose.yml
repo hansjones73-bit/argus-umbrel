@@ -13,4 +13,4 @@ services:
       - STARTING_CAPITAL=302
       - BOT_TIMEZONE=America/New_York
     command: >
-      sh -c "apk add --no-cache python3 py3-pip sqlite 2>/dev/null && pip3 install optuna --quiet --break-system-packages 2>/dev/null; echo '#!/bin/sh' > /app/start.sh && echo 'cd /app' >> /app/start.sh && echo 'node dashboard-server-v3.js &' >> /app/start.sh && echo 'node bot-v8.js >> /app/bot.log 2>> /app/bot-error.log' >> /app/start.sh && chmod +x /app/start.sh && rm -f /app/.bot-lock.pid && sh /app/start.sh"
+      sh -c "apk add --no-cache python3 py3-pip sqlite 2>/dev/null && pip3 install optuna --quiet --break-system-packages 2>/dev/null; echo IyEvYmluL3NoCmNkIC9hcHAKbm9kZSBkYXNoYm9hcmQtc2VydmVyLXYzLmpzICYKbm9kZSBib3QtdjguanMgPj4gL2FwcC9ib3QubG9nIDI+PiAvYXBwL2JvdC1lcnJvci5sb2cK | base64 -d > /app/start.sh && chmod +x /app/start.sh && rm -f /app/.bot-lock.pid && sh /app/start.sh"
