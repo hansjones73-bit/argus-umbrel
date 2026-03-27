@@ -6,8 +6,8 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data:/app
     ports:
-      - "${APP_PORT}:8888"
+      - '${APP_PORT}:8888'
     environment:
       - NODE_ENV=production
       - WORKSPACE_DIR=/app
-    command: sh -c "apk add --no-cache python3 py3-pip sqlite 2>/dev/null && pip3 install optuna --quiet --break-system-packages 2>/dev/null; sh /app/start.sh"
+    command: sh -c 'apk add --no-cache python3 py3-pip sqlite 2>/dev/null && pip3 install optuna --quiet --break-system-packages 2>/dev/null; sh /app/start.sh'
